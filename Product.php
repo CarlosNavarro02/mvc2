@@ -15,6 +15,9 @@
         {
             return Product::PRODUCTS;
         }
-
+        public static function find($id)
+        {
+            return Product::PRODUCTS[$id-1];
+        }
     }
    
