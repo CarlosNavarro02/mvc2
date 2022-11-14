@@ -22,9 +22,11 @@
                 $method = "index";
             }
             //Voy a cargar el contrlolador 
-            $file = "app/controllers/$controllerName" . ".php";
+            $file = "../app/controllers/$controllerName" . ".php";
             if (file_exists($file)) {
                 require_once $file;
+                echo $file;
+                
             }else {
                 http_response_code(404);
                 die("No encontrado");
