@@ -1,5 +1,5 @@
 <?php
-namespace Dewes\Galaxias;
+namespace Dwes\Galaxias;
 const RADIO = 1.25;
 function observar($mensaje)
 {
