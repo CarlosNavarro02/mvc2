@@ -1,4 +1,5 @@
 <?php
+    namespace Core;
     /* 
         Si no la url no especificada ningun controlador (recuros => asigno)
         uno por defecto => home
@@ -31,6 +32,7 @@
                 http_response_code(404);
                 die("No encontrado");
             }
+            $controllerName = "\\App\\Controllers\\$controllerName";
             $controllerObject = new $controllerName();
             if (method_exists($controllerObject,$method)) {
                 $controllerObject->$method($arguments);

@@ -1,4 +1,5 @@
 <?php
+    namespace Core;
   //  echo "<h2>Contenido Privado</h2>";
     
   /* /recurso/accion/parametro
@@ -6,7 +7,7 @@
         accion: metodos del controladores
         parametros : find -> id de producto */
     require_once "core/App.php";
-    $app = new App();   
+    $app = new \Core\App();   
 
     /*$app = new Controller();
     //defino variable de peticion en la url

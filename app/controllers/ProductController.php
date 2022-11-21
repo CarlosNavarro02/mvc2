@@ -1,4 +1,5 @@
 <?php
+    namespace App\Controllers;
     require_once "../Product.php";
     class ProductController {
          function __construct() {
@@ -6,13 +7,13 @@
         }
         function index()
         {
-            $products = Product::all();
+            $products = \Product::all();
             require "../views/product.php";
         }
-        function show()
+        function show() 
         {
             $id = $_GET["id"];
-            $product = Product::find($id);
+            $product = \Product::find($id);
             require "../views/show.php";
         }
     }
