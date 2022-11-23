@@ -6,7 +6,8 @@
         recurso: controladores
         accion: metodos del controladores
         parametros : find -> id de producto */
-    require_once "core/App.php";
+    //require_once "core/App.php";
+    require 'vendor/autoload.php';
     $app = new \Core\App();   
 
     /*$app = new Controller();

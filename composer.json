@@ -1,0 +1,21 @@
+{
+    "name": "alumno/mvc",
+    "authors": [
+        {
+            "name": "CarlosNavarro02",
+            "email": "carlos.navarro1793@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\Controllers\\": "app/controllers/",
+            "App\\Models\\": "app/models/"
+        }
+    }
+
+}
