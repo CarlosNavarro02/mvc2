@@ -19,7 +19,7 @@
         $clave1 = "1234";
 
         $sentencia->bindParam(1,$nombre);
-        $sentencia->bindParam(2,$clave1);
+        $sentencia->bindParam(2,$clave1);   
 
        // $sentencia->bindValue(":nombre",$nombre);
         //$sentencia->bindValue(":clave",$clave1);
